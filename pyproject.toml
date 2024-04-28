@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools >= 61.0",
+    "setuptools-scm>=8.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tourney"
+dynamic = ["version"]
+[tool.setuptools_scm]
+authors = [
+    { name="Dakota Murdock" }
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "networkx>=3.3",
+    "numpy>=1.26.4",
+    "pandas>=2.2.2",
+    "scipy>=1.13.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/dakotamurdock/tourney"
